@@ -3,9 +3,10 @@ import { Order } from "./classes/interfaces/order";
 import { Products } from "./classes/interfaces/products";
 import { SaveOrder } from "./classes/services/saveOrder";
 import { ShoppingCart } from "./classes/interfaces/shoppingCart";
+import { FiftyPercentDiscount } from "./classes/interfaces/discount";
 
-
-const shoppingCart = new ShoppingCart();
+const fiftyPercentDiscount = new FiftyPercentDiscount()
+const shoppingCart = new ShoppingCart(fiftyPercentDiscount);
 const messaging = new Messaging();
 const saveOrder = new SaveOrder();
 const order = new Order(shoppingCart, messaging, saveOrder);
