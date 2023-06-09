@@ -1,7 +1,7 @@
 
-import { OrderStatus } from './interfaces/orderStatus';
-import { Messaging } from './messaging';
-import { SaveOrder } from './saveOrder';
+import { OrderStatus } from './orderStatus';
+import { Messaging } from '../services/messaging';
+import { SaveOrder } from '../services/saveOrder';
 import { ShoppingCart } from './shoppingCart';
 
 
